@@ -5,6 +5,8 @@
     box-sizing: border-box;
 }
 
+/******************* General Styles */
+
 body {
     font-family: 'Merriweather', serif;
     font-weight: 300;
@@ -16,11 +18,10 @@ body {
     padding: 0 15px;
 }
 
-/* Navbar */
+/******************* Navbar */
 
 nav {
     font-family: 'Raleway', sans-serif;
-    /* font-weight: 300; */
     background-color: #000;
     text-transform: uppercase;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
@@ -44,13 +45,48 @@ nav {
     margin-left: 5px;
 }
 
+/* Navbar icons */
+/* Container for positioning */
+.nav-label-wrapper {
+    position: relative;
+    display: inline-block;
+    min-width: 40px; 
+    text-align: center;
+}
+
+.nav-icon-lg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.nav-link:hover, 
+.nav-link:focus {
+    color: #fff;
+}
+
+/******************* Media Queries */
+
 /* Media query: Laptops and larger (992px and up) */
 @media screen and (min-width: 992px) {
     /* Navbar */
     .nav-link {
         font-size: 0.88rem;
-        font-weight: 250;
+        font-weight: 280;
         letter-spacing: 1px;
         color: #fff;
     }
+
+    /* Navbar icons */
+    /* Show/hide logic for desktop */
+    .nav-link:hover .nav-text {
+        visibility: hidden;
+      }
+    
+      .nav-link:hover .nav-icon-lg {
+        display: inline;
+        font-size: 1.33rem;
+      }
 }
