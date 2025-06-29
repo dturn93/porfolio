@@ -110,6 +110,24 @@ nav {
     color: #fff;
 }
 
+/******************* Home Section */
+
+.home-image {
+    background-image: url('../../assets/images/home-image.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    width: 100%;
+    margin-top: 50px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.intro-text {
+    color: var(--white);
+}
+
 /******************* Media Queries */
 
 /* Media query: Laptops and larger (992px and up) */
