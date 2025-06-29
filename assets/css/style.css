@@ -74,6 +74,7 @@ nav {
     font-weight: 250;
     letter-spacing: 1px;
     color: #fff;
+    cursor: pointer;
 }
 
 .nav-link i {
