@@ -10,13 +10,48 @@
 body {
     font-family: 'Merriweather', serif;
     font-weight: 300;
+    color: var(--black);
 }
 
 .container {
-    max-width: 1200px;
+    /* max-width: 1200px; */
     margin: 0 auto;
-    padding: 0 15px;
+    /* padding: 0 15px; */
+    margin-top: 50px;
 }
+
+h1, 
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Raleway', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/******************* Colors */
+
+:root {
+    --white: #fafafa;
+    --black: #020202;
+    --purple: #28003D;
+  }
+
+.bg-black {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.bg-white {
+    background-color: var(--white);
+    color: var(--black);
+}
+
 
 /******************* Navbar */
 
