@@ -34,6 +34,10 @@ a {
     cursor: pointer;
 }
 
+.hidden {
+    visibility: hidden;
+  }
+
 /******************* Colors */
 
 :root {
@@ -103,7 +107,7 @@ nav {
 /* Transition for text and icon */
 .nav-text,
 .nav-icon-lg {
-  transition: opacity 0.3s ease, visibility 0.3s ease;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
 .nav-link:hover,
@@ -129,6 +133,46 @@ nav {
     color: var(--white);
 }
 
+.code-output {
+    color: #0f0;
+    font-family: 'Courier New', monospace;
+    font-size: 1rem;
+    white-space: pre-wrap;
+    padding: 20px;
+    border-radius: 10px;
+    height: fit-content;
+}
+
+#codeText {
+    white-space: pre-wrap;
+    display: inline;
+}
+
+#typedText {
+    display: inline;
+}
+
+.caret {
+    display: inline;
+    animation: blink 1s infinite;
+    user-select: none;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+.home-buttons {
+    margin-top: auto;
+    margin-bottom: 200px;
+    margin-left: 30px;
+}
+
+.cv-btn {
+    margin-right: 30px;
+}
+
 /******************* Media Queries */
 
 /* Media query: Laptops and larger (992px and up) */
@@ -147,11 +191,11 @@ nav {
     .nav-link:hover .nav-text {
         opacity: 0;
         visibility: hidden;
-      }
-    
-      .nav-link:hover .nav-icon-lg {
+    }
+
+    .nav-link:hover .nav-icon-lg {
         opacity: 1;
         visibility: visible;
         font-size: 1.33rem;
-      }
+    }
 }

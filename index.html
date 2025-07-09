@@ -68,15 +68,15 @@
                     <li class="nav-item">
                         <a class="nav-link px-1 px-lg-3" href="#">
                             <span class="nav-label-wrapper">
-                              <span class="nav-text">About</span>
-                              <span class="nav-icon-lg">
-                                <i class="fa-solid fa-user-tie"></i>
-                              </span>
+                                <span class="nav-text">About</span>
+                                <span class="nav-icon-lg">
+                                    <i class="fa-solid fa-user-tie"></i>
+                                </span>
                             </span>
                             <span class="nav-icon-mobile d-inline d-lg-none">
-                              <i class="fa-solid fa-user-tie"></i>
+                                <i class="fa-solid fa-user-tie"></i>
                             </span>
-                          </a>
+                        </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link px-1 px-lg-3" href="#">
@@ -141,15 +141,33 @@
             <div class="row">
                 <div class="col-12">
                     <div class="row home-image">
-                        <div class="col-6 intro-text">
-                            <p>Hi There!</p>
-                            <h1>I'm Danny Turner</h1>
-                            <h2>Junior Software Engineer</h2>
-                            <p>I'm a junior software engineer with a passion for building web applications and mobile apps. I'm a quick learner and I'm always looking to improve my skills.</p>
-                            <button class="btn btn-primary">Download CV</button>
+                        <div class="col-6 d-flex flex-column justify-content-start">
+                            <!-- Intro text -->
+                            <div class="intro-text">
+                                <h1>Danny Turner</h1>
+                                <h2>Junior Software Engineer</h2>
+                                <p>
+                                    I'm a junior software engineer with a passion for building web applications and
+                                    mobile
+                                    apps. I'm a quick learner and I'm always looking to improve my skills.
+                                </p>
+                            </div>
+
+                            <!-- Code for "Run Code" -->
+                            <div class="code-output d-none">
+                                <code id="codeText">
+                                    <span id="typedText"></span><span class="caret hidden">|</span>
+                                </code>
+                            </div>
+
+                            <!-- Buttons -->
+                            <div class="home-buttons">
+                                <button class="btn btn-primary cv-btn">Download CV</button>
+                                <button class="btn btn-secondary" id="runCodeBtn">Run Code</button>
+                            </div>
                         </div>
                     </div>
-                    
+
                 </div>
             </div>
     </section>
