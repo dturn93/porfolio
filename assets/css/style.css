@@ -199,3 +199,9 @@ nav {
         font-size: 1.33rem;
     }
 }
+
+@media screen and (max-width: 767.98px) {
+    .padding-sm {
+        padding: 0 30px;
+    }
+}
